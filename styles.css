@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(253, 209, 66);
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+main{
+    margin: 15px;
+    padding: 20px 10px;
+    background: linear-gradient(90deg,rgba(27, 27, 50, 0.95) 0%, rgba(11, 9, 4, 0.95) 50%,rgb(27, 27, 50,0.95) 100%);
+    color: wheat;
+    border-radius: 20px;
+    box-shadow: 5px -5px rgb(247, 208, 78);
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px 10px;
+  background-color: rgba(11, 9, 4, 0.2);
+  border: 3px solid rgba(27, 27, 50);
+  border-radius: 40px;
+}
+
+#title{
+    color: rgb(255, 198, 12);
+    font-size: 40px;
+    border-bottom: 2px solid rgb(255, 198, 12);
+    margin-bottom: 20px;
+}
+
+#title:hover{
+    background-color: rgba(50, 37, 5, 0.808);
+    color: rgb(255, 198, 12);
+    scale: 1.05;
+    border: 2px solid rgb(255, 198, 12);
+    transition: 0.4s;
+}
+
+#title:not(:hover){
+    transition: 2s;
+}
+
+#header figure{
+    max-width: 400px;
+    height: 100%;
+    text-align: center;
+}
+
+#header figure img{
+    width: 100%;
+    object-fit: contain;
+    opacity: .95;
+    border-radius: 20px;
+    border: 5px double rgb(247, 208, 78);
+}
+
+#header #content-header{
+    width: 600px;
+    text-align: center;
+}
+
+#timeline{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#timeline > h2{
+    letter-spacing: 20px;
+    color: rgb(255, 198, 12);
+}
+
+.milestone{
+    padding: 20px;
+    border: 2px solid rgb(247, 208, 78);
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 2px -4px #FFD95C;
+    width: 300px;
+}
+
+.milestone h3,.milestone h4{
+    text-align: center;
+    color: rgb(255, 198, 12);
+}
+
+.divider{
+    width: 95%;
+    height: 2px;
+    background-color: rgb(255, 198, 12);
+    margin: 0 auto;
+    margin: 8px 0;
+}
+
+.milestone:hover{
+    background-color: #ffdc673f;
+    box-shadow: none;
+    width: 380px;
+    color: wheat;
+    border: 2px solid rgb(255, 198, 12);
+    scale: 1.1;
+    transition: 0.1s;
+    text-align: center;
+}
+
+.milestone:not(:hover){
+    scale: 1;
+    transition: 0.3s;
+}
+
+.line{
+    width: 5px;
+    height: 25px;
+    background-color: #FFD95C;
+}
+
+.divider-section{
+    width: 90%;
+    height: 2px;
+    background-color: #FFD95C;
+    margin: 30px auto;
+}
+
+footer{
+    background: linear-gradient(90deg,rgba(27, 27, 50, 0.95) 0%, rgba(11, 9, 4, 0.95) 50%,rgb(27, 27, 50,0.95) 100%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid rgba(27, 27, 50, 0.95);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: wheat;
+    font-weight: bold;
+}
+
+footer > span > a{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #FFD95C;
+}
+
+footer > span > a:hover{
+    color: rgb(255, 198, 12);
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+footer > span > a:not(:hover){
+    scale: 1;
+    transition: 0.5s;
+}
