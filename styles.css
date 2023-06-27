@@ -36,9 +36,11 @@ main{
 
 #title{
     color: rgb(255, 198, 12);
-    font-size: 40px;
+    font-size: 35px;
     border-bottom: 2px solid rgb(255, 198, 12);
     margin-bottom: 20px;
+    height: 100%;
+    line-height: 35px;
 }
 
 #title:hover{
@@ -86,6 +88,7 @@ main{
 #timeline > h2{
     letter-spacing: 20px;
     color: rgb(255, 198, 12);
+    line-height: 35px;
 }
 
 .milestone{
@@ -94,7 +97,8 @@ main{
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 2px -4px #FFD95C;
-    width: 300px;
+    width: 250px;
+    max-width: 340px;
 }
 
 .milestone h3,.milestone h4{
@@ -113,10 +117,9 @@ main{
 .milestone:hover{
     background-color: #ffdc673f;
     box-shadow: none;
-    width: 380px;
+    scale: 1.1;
     color: wheat;
     border: 2px solid rgb(255, 198, 12);
-    scale: 1.1;
     transition: 0.1s;
     text-align: center;
 }
